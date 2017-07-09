@@ -1,5 +1,5 @@
-import assert from 'assert'
-import Future from '../package/future'
+const assert = require('assert')
+const Future = require('../package/future')
 
 const toUpperCase = s => s.toUpperCase()
 

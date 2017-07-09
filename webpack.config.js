@@ -1,6 +1,7 @@
 // webpack.config.js
 const webpack = require('webpack')
 const path = require('path')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -26,8 +27,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: [path.resolve('./src')],
-        exclude: /(node_modules|bower_components)/,
-        use: [{ loader: 'babel-loader' }],
+        exclude: /(node_modules|bower_components)/
       },
     ],
   },
@@ -35,5 +35,5 @@ module.exports = {
     extensions: ['.js'],
     modules: [path.resolve('src'), 'node_modules'],
   },
-  plugins: [new webpack.optimize.UglifyJsPlugin()],
+  plugins: [new UglifyJSPlugin()],
 }

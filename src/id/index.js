@@ -19,4 +19,4 @@ const Id = x => ({
 // of :: Any -> Id
 Id.of = x => Id(x)
 
-export default Id
+module.exports = Id

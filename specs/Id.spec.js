@@ -1,8 +1,8 @@
-import assert from 'assert'
-import Id from '../package/id'
+const assert = require('assert')
+const Id = require('../package/id')
 
-import { identity, composition } from '../src/laws/functor'
-import { associativity } from '../src/laws/chain'
+const { identity, composition } = require('../src/laws/functor')
+const { associativity } = require('../src/laws/chain')
 
 describe('A Id', () => {
   describe('as a monad', () => {

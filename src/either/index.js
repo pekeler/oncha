@@ -1,14 +1,14 @@
-import curry from 'curry'
-import isNull from 'isNull'
+const curry = require('curry')
+const isNull = require('isNull')
 
 // fromNullable :: Any -> Left | Right
-export const fromNullable = x => (isNull(x) ? Left : Right)(x)
+const fromNullable = x => (isNull(x) ? Left : Right)(x)
 
 // isFunction :: Any -> Boolean
 const isFunction = func => !!(func && func.constructor && func.call && func.apply)
 
 // Right :: Any -> Right
-export const Right = x => ({
+const Right = x => ({
   // ap :: Applicative -> Applicative
   ap: app => app.map(f => f(x)),
   // chain :: ƒ -> Monad
@@ -27,7 +27,7 @@ export const Right = x => ({
 Right.of = x => Right(x)
 
 // Left :: Any -> Left
-export const Left = x => ({
+const Left = x => ({
   // ap :: Applicative -> Applicative
   ap: app => Left(x),
   // chain :: ƒ -> Left
@@ -59,7 +59,7 @@ const cond = cond => left => right =>
 const fromCond = cond => left => right => (callIfFunction(cond) ? Right(right) : Left(left))
 
 // Either :: Either
-export const Either = {
+const Either = {
   cond,
   fromCond,
   fromNullable,
@@ -67,4 +67,8 @@ export const Either = {
   Right
 }
 
-export default Either
+module.exports = Either
+module.exports.fromNullable = fromNullable
+module.exports.Right = Right
+module.exports.Left = Left
+module.exports.Either = Either

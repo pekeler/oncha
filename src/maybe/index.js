@@ -1,5 +1,5 @@
-import Id from 'id'
-import isNull from 'isNull'
+const Id = require('id')
+const isNull = require('isNull')
 
 // Nothing :: _ -> Nothing
 const Nothing = () => ({
@@ -47,4 +47,4 @@ const Maybe = x =>
 // Any -> Maybe
 Maybe.of = x => Maybe(x)
 
-export default Maybe
+module.exports = Maybe

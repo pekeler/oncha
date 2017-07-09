@@ -1,6 +1,6 @@
-import assert from 'assert'
-import fork from '../package/fork'
-import Future from '../package/future'
+const assert = require('assert')
+const fork = require('../package/fork')
+const Future = require('../package/future')
 
 const toUpperCase = s => s.toUpperCase()
 

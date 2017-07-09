@@ -1,4 +1,4 @@
-import curry from 'curry'
+const curry = require('curry')
 
 // fork :: (ƒ -> ƒ -> Any) -> ƒ -> ƒ -> Future
 const fork = action => curry((error, success) => action(error, success))
@@ -34,18 +34,18 @@ const countSparse = arr => arr.filter(x => x !== undefined).length
 const all = futures =>
   Future((left, right, errored = false) =>
     futures.reduce(
-      (results, future, i) =>
-        (future.fork(
+      (results, future, i) => (
+        future.fork(
           error => !errored && ((errored = true), left(error)),
-          result =>
-            ((results[i] = result), !errored &&
-              countSparse(results) === futures.length &&
-              right(results))
-        ), results),
+          result => (
+            (results[i] = result),
+            !errored && countSparse(results) === futures.length && right(results))),
+        results
+      ),
       []
     ))
 
 // all :: [Future] -> Future
 Future.all = (...futures) => all([].concat(...futures))
 
-export default Future
+module.exports = Future

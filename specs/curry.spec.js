@@ -1,5 +1,5 @@
-import assert from 'assert'
-import curry from '../package/curry'
+const assert = require('assert')
+const curry = require('../package/curry')
 
 describe('A curry', () => {
   it('should curry a function', () => assert.equal(curry((a, b, c) => a + b + c)(1, 2, 3), 6))

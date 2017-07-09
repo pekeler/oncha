@@ -1,6 +1,6 @@
-import assert from 'assert'
-import Id from '../package/id'
-import { Either, Right, Left, fromNullable } from '../package/either'
+const assert = require('assert')
+const Id = require('../package/id')
+const { Either, Right, Left, fromNullable } = require('../package/either')
 
 describe('A Either', () => {
   it('should not call the map function when created from nullable', () =>

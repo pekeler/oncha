@@ -1,6 +1,6 @@
-import assert from 'assert'
-import List from '../package/list'
-import Id from '../package/id'
+const assert = require('assert')
+const List = require('../package/list')
+const Id = require('../package/id')
 
 const list = List([1, 2, 3])
 const head = list.head()

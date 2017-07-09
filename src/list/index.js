@@ -1,5 +1,5 @@
-import Id from 'id'
-import curry from 'curry'
+const Id = require('id')
+const curry = require('curry')
 
 // isFunction :: Any -> Boolean
 const isFunction = func => !!(func && func.constructor && func.call && func.apply)
@@ -54,4 +54,4 @@ const List = array =>
 // Array -> List
 List.of = List
 
-export default List
+module.exports = List
