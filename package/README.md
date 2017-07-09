@@ -1,6 +1,12 @@
 # ऊंचा Oncha
 A modular exalted javascript monadic library & functional fun. [fantasy-land](https://github.com/fantasyland/fantasy-land) compliant.
 
+# Fork
+Forked from https://github.com/aldo-dev/oncha to simplify the build.
+
+- No more cross compilation with babel. The original project already required node v6+ which supports almost everything we need.
+- No more dependency on yarn. npm5 is good enough.
+
 # Install
 ``` bash
 npm add -S oncha
