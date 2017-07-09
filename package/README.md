@@ -3,7 +3,7 @@ A modular exalted javascript monadic library & functional fun. [fantasy-land](ht
 
 # Install
 ``` bash
-yarn add oncha
+npm add -S oncha
 ```
 
 # Types

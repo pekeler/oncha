@@ -21,8 +21,8 @@
     "build": "./node_modules/.bin/webpack",
     "build:watch": "./node_modules/.bin/webpack --watch",
     "format": "./node_modules/.bin/nextformat ./src && ./node_modules/.bin/nextformat ./specs",
-    "precommit": "yarn format",
-    "test": "yarn build && yarn test:specs",
+    "precommit": "npm run format",
+    "test": "npm run build && npm run test:specs",
     "test:specs": "./node_modules/.bin/mocha --recursive --compilers js:babel-core/register specs/**",
     "test:watch": "./node_modules/.bin/mocha --recursive -w --compilers js:babel-core/register specs/**"
   },
