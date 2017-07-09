@@ -1,6 +1,6 @@
 const assert = require('assert')
-const fork = require('../package/fork')
-const Future = require('../package/future')
+const fork = require('../src/fork')
+const Future = require('../src/future')
 
 const toUpperCase = s => s.toUpperCase()
 

@@ -1,4 +1,4 @@
-const compose = require('compose')
+const compose = require('../compose')
 
 // map :: (a -> b) -> Functor -> Functor
 const map = f => functor => functor.map(f)

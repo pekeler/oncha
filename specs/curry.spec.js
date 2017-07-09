@@ -1,5 +1,5 @@
 const assert = require('assert')
-const curry = require('../package/curry')
+const curry = require('../src/curry')
 
 describe('A curry', () => {
   it('should curry a function', () => assert.equal(curry((a, b, c) => a + b + c)(1, 2, 3), 6))

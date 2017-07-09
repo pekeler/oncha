@@ -1,5 +1,5 @@
-const Id = require('id')
-const isNull = require('isNull')
+const Id = require('../id')
+const isNull = require('../isNull')
 
 // Nothing :: _ -> Nothing
 const Nothing = () => ({

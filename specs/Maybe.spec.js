@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Maybe = require('../package/maybe')
+const Maybe = require('../src/maybe')
 
 describe('A Maybe', () => {
   it('assert inspect will return a formatted maybe', () =>

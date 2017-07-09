@@ -1,6 +1,6 @@
 const assert = require('assert')
-const Id = require('../package/id')
-const { Either, Right, Left, fromNullable } = require('../package/either')
+const Id = require('../src/id')
+const { Either, Right, Left, fromNullable } = require('../src/either')
 
 describe('A Either', () => {
   it('should not call the map function when created from nullable', () =>

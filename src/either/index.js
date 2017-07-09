@@ -1,5 +1,5 @@
-const curry = require('curry')
-const isNull = require('isNull')
+const curry = require('../curry')
+const isNull = require('../isNull')
 
 // fromNullable :: Any -> Left | Right
 const fromNullable = x => (isNull(x) ? Left : Right)(x)

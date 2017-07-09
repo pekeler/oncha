@@ -1,4 +1,4 @@
-const curry = require('curry')
+const curry = require('../curry')
 
 // fork :: (ƒ -> ƒ -> Any) -> ƒ -> ƒ -> Future
 const fork = action => curry((error, success) => action(error, success))

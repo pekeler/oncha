@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Id = require('../package/id')
+const Id = require('../src/id')
 
 const { identity, composition } = require('../src/laws/functor')
 const { associativity } = require('../src/laws/chain')

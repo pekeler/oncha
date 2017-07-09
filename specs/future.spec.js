@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Future = require('../package/future')
+const Future = require('../src/future')
 
 const toUpperCase = s => s.toUpperCase()
 

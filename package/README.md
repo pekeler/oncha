@@ -6,6 +6,7 @@ Forked from https://github.com/aldo-dev/oncha to simplify the build.
 
 - No more cross compilation with babel. The original project already required node v6+ which supports almost everything we need.
 - No more dependency on yarn. npm5 is good enough.
+- Test source to eliminate build step.
 
 # Install
 ``` bash

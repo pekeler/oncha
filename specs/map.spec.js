@@ -1,5 +1,5 @@
 const assert = require('assert')
-const map = require('../package/map')
+const map = require('../src/map')
 
 describe('A map', () => {
   it('will compose map 1 function with 1 arguments', () =>

@@ -1,5 +1,5 @@
 const assert = require('assert')
-const compose = require('../package/compose')
+const compose = require('../src/compose')
 
 describe('A compose', () => {
   it('will compose one function', () => assert.equal(compose(a => a)('exalted'), 'exalted'))

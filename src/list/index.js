@@ -1,5 +1,5 @@
-const Id = require('id')
-const curry = require('curry')
+const Id = require('../id')
+const curry = require('../curry')
 
 // isFunction :: Any -> Boolean
 const isFunction = func => !!(func && func.constructor && func.call && func.apply)

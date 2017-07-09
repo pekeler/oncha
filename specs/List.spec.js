@@ -1,6 +1,6 @@
 const assert = require('assert')
-const List = require('../package/list')
-const Id = require('../package/id')
+const List = require('../src/list')
+const Id = require('../src/id')
 
 const list = List([1, 2, 3])
 const head = list.head()

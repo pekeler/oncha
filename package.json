@@ -22,7 +22,7 @@
     "build:watch": "./node_modules/.bin/webpack --watch",
     "format": "./node_modules/.bin/nextformat ./src && ./node_modules/.bin/nextformat ./specs",
     "precommit": "npm run format",
-    "test": "npm run build && npm run test:specs",
+    "test": "npm run test:specs",
     "test:specs": "./node_modules/.bin/mocha --recursive specs/**",
     "test:watch": "./node_modules/.bin/mocha --recursive -w specs/**"
   },
