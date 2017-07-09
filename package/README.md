@@ -10,7 +10,7 @@ Forked from https://github.com/aldo-dev/oncha to simplify the build.
 
 # Install
 ``` bash
-npm add -S oncha
+npm install -S oncha
 ```
 
 # Types
